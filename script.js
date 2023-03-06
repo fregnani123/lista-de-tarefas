@@ -1,5 +1,30 @@
 
 
+class Carro{
+    constructor(nome){
+        this.nome = nome
+        this.velecidade = 0
+    }
+
+}
+
+let novoCar = new Carro("Fusca")
+
+
+console.log(novoCar )
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // class Pessoa{ 
 //   constructor(nome,sobrenome){
