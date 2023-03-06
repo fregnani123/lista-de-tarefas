@@ -1,17 +1,42 @@
-
-
-class Carro{
-    constructor(nome){
-        this.nome = nome
-        this.velecidade = 0
+class Pessoa {
+    constructor(nome,sobrenome){
+        this.nome = nome;
+        this.sobrenome = sobrenome;
     }
-
 }
 
-let novoCar = new Carro("Fusca")
+let newPerson = new Pessoa("Fabiano","fregnani")
+
+console.log(newPerson)
 
 
-console.log(novoCar )
+
+
+
+// class Carro{
+//     constructor(nome){
+//         this.nome = nome
+//         this.velecidade = 100
+//     }
+
+//     acelerar(){
+//         if(this.velecidade >= 100) return
+//         this.velecidade++;
+//     }
+//     freiar(){
+//         if(this.velecidade <= 0) return
+//         this.velecidade--;
+//     }
+
+// }
+
+// let novoCar = new Carro("Fusca");
+
+// for(let i = 0; i < 0; i++){
+//      novoCar.acelerar()
+// }
+
+// console.log(novoCar)
 
 
 
