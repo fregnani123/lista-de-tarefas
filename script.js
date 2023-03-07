@@ -1,16 +1,28 @@
 class Pessoa {
-    constructor(nome,sobrenome){
-        this.nome = nome;
-        this.sobrenome = sobrenome;
+    constructor(nome, cidade) {
+      this.nome = nome;
+      this.cidade = cidade;
     }
-}
+    get nome() {
+        return this._nome;
+    }
+    set nome(value){
+      this._nome = value
+    }
 
-let newPerson = new Pessoa("Fabiano","fregnani")
+    get cidade() {
+      return this._cidade;
+    }
+  
+    set cidade(value) {
+      this._cidade = value;
+    }
+
+  }
+  
+  let newPerson = new Pessoa("Fernanda", "içara");
 
 console.log(newPerson)
-
-
-
 
 
 // class Carro{
