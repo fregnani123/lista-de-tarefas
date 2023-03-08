@@ -1,28 +1,56 @@
-class Pessoa {
-    constructor(nome, cidade) {
-      this.nome = nome;
-      this.cidade = cidade;
-    }
-    get nome() {
-        return this._nome;
-    }
-    set nome(value){
-      this._nome = value
-    }
 
-    get cidade() {
-      return this._cidade;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//class Pessoa {
+//     constructor(nome, cidade) {
+//       this.nome = nome;
+//       this.cidade = cidade;
+//     }
+//     get nome() {
+//         return this._nome;
+//     }
+//     set nome(value){
+//       this._nome = value
+//     }
+
+//     get cidade() {
+//       return this._cidade;
+//     }
   
-    set cidade(value) {
-      this._cidade = value;
-    }
+//     set cidade(value) {
+//       this._cidade = value;
+//     }
 
-  }
+//   }
   
-  let newPerson = new Pessoa("Fernanda", "içara");
+//   let newPerson = new Pessoa("Fernanda", "içara");
 
-console.log(newPerson)
+// console.log(newPerson)
 
 
 // class Carro{
