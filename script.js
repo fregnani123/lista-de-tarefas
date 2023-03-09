@@ -1,3 +1,29 @@
+class Carro {
+  constructor(marca, modelo, ano) {
+    this.marca = marca;
+    this.modelo = modelo;
+    this.ano = ano;
+    
+    // define a propriedade cor
+    Object.defineProperty(this, 'cor', {
+      enumerable: true,
+      configurable: true,
+      set: function(value) {
+        this._cor = value;
+      },
+      get: function() {
+        return this._cor;
+      }
+    });
+  }
+}
+
+// criando uma instância de Carro e definindo a cor
+const meuCarro = new Carro('Toyota', 'Corolla', 2020);
+meuCarro.cor = 'vermelho';
+
+console.log(meuCarro); // { marca: 'Toyota', modelo: 'Corolla', ano: 2020, _cor: 'vermelho' }
+console.log(meuCarro.cor); // 'vermelh
 
 
 
@@ -10,6 +36,54 @@
 
 
 
+
+
+// class Pessoa{
+//   constructor(nome,n1,n2){
+//     this.nome = nome;
+//     this.n1 = n1;
+//     this.n2= n2;
+   
+//   }
+//   mediaNotas(){
+//     return (this.n1 + this.n2)/2
+//   }
+// }
+
+// novaPessoa = new Pessoa("Fabiano",5,9)
+// console.log(novaPessoa.nome)
+// console.log(novaPessoa.mediaNotas())
+
+
+
+
+
+// function calcMedia(){
+
+//   return (this.notas[0] + this.notas[1])/2;
+//  }
+
+// let aluno = {
+//    nome :"Fabiano",
+//    notas: [8, 9],
+//    media : calcMedia,
+   
+// };
+
+
+// let aluno2 = {
+//   nome :"Fabio",
+//   notas: [8, 5],
+//   media : calcMedia,
+  
+// };
+
+
+// console.log(aluno.nome)
+// console.log(aluno.media())
+
+// console.log(aluno2.nome)
+// console.log(aluno2.media())
 
 
 
