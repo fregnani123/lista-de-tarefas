@@ -24,10 +24,10 @@ function cpf (cpfLimpo) {
 let cpfNovo = cpf("063.912.989-71") 
 let cpfSemDigito = cpfNovo.slice(0,-2) + 1
 let cpfArray = Array.from(cpfSemDigito)
-
+console.log(cpfArray)
   
   for(let i = 0; i<cpfArray.length; i++){
-console.log()
+
   }
 
 
