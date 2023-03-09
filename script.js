@@ -1,29 +1,68 @@
-class Carro {
-  constructor(marca, modelo, ano) {
-    this.marca = marca;
-    this.modelo = modelo;
-    this.ano = ano;
-    
-    // define a propriedade cor
-    Object.defineProperty(this, 'cor', {
-      enumerable: true,
-      configurable: true,
-      set: function(value) {
-        this._cor = value;
-      },
-      get: function() {
-        return this._cor;
-      }
-    });
-  }
+// class Produto{
+//   constructor(nome,preco){
+//   this.nome = nome;
+//   this.preco= preco;
+//   Object.defineProperty(this, "marca",{
+//     enumerable:true,
+//     configurable:true,
+
+//     set:function(value){
+//       this._marca = value;
+//     },
+//     get:function(){
+//     return this_marca;
+//     }
+//   })
+
+//   }
+// }
+
+function cpf (cpfLimpo) {
+  return cpfLimpo.replace(/\D+/g, "")
 }
 
-// criando uma instância de Carro e definindo a cor
-const meuCarro = new Carro('Toyota', 'Corolla', 2020);
-meuCarro.cor = 'vermelho';
+let cpfNovo = cpf("063.912.989-71") 
+let cpfSemDigito = cpfNovo.slice(0,-2) + 1
+let cpfArray = Array.from(cpfSemDigito)
 
-console.log(meuCarro); // { marca: 'Toyota', modelo: 'Corolla', ano: 2020, _cor: 'vermelho' }
-console.log(meuCarro.cor); // 'vermelh
+  
+  for(let i = 0; i<cpfArray.length; i++){
+console.log()
+  }
+
+
+
+
+
+ 
+
+
+
+
+// class Carro {
+//   constructor(marca, modelo, ano) {
+//     this.marca = marca;
+//     this.modelo = modelo;
+//     this.ano = ano;
+    
+//     Object.defineProperty(this, 'cor', {
+//       enumerable: true,
+//       configurable: true,
+//       set: function(value) {
+//         this._cor = value;
+//       },
+//       get: function() {
+//         return this._cor;
+//       }
+//     });
+//   }
+// }
+
+// const meuCarro = new Carro('Toyota', 'Corolla', 2020);
+// meuCarro.cor = 'vermelho';
+
+// console.log(meuCarro); 
+// console.log(meuCarro.cor); 
 
 
 
